@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.mainContainer{
+    
+    margin: 100px auto 0px auto;
+    background-color: yellowgreen;
+    width: max-content;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+
+}
+.mainContainer .screenContainer input{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 35px;
+    height: 60px;
+    width: 330px;
+    padding: 5px 10px 5px 0px;
+    text-align: right;
+}
+.resultContainer{
+ text-align: right;
+width: 100%;
+height: 24px;
+margin-bottom: 5px;
+}
+.mainContainer  .resultContainer #result{
+ 
+  font-size: 25px;
+ padding-right: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  .mainContainer .btnContainer{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 10px;
+    column-gap: 15px;
+  }
+
+  .mainContainer .btnContainer .btn{
+    background-color: ghostwhite;
+    width: 70px;
+    height:  50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+
+  }
+  .mainContainer .btnContainer .equalbtn,.mainContainer .btnContainer .clearInput{
+    background-color: darkgreen ;
+    color: #fff;
+  }
